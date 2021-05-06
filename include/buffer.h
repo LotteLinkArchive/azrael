@@ -1,9 +1,9 @@
 #pragma once
-#include <stdbool.h>
-#include <stddef.h>
-
 #include "global.h"
 #include "status.h"
+
+#include <stdbool.h>
+#include <stddef.h>
 
 struct az_alloc_s {
    void *data;
