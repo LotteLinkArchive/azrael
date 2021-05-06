@@ -38,7 +38,7 @@ az_stat_t az_rzbuf(az_buf_t *buffer, size_t bytes, bool zero)
    size_t old_size = buffer->bytes;
 
    buffer->mi->realloc(buffer->mi->data, buffer->data, bytes);
-   if (!buffer->data) return AZ_S_OOM;
+   if (!buffer->data) return AZ_S_MOOM;
 
    if (zero && bytes > old_size) memset((char *)buffer->data + old_size, 0, bytes - old_size);
 
