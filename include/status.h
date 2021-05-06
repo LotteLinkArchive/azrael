@@ -4,7 +4,7 @@
 enum az_stat_e {
    /* See az_statstr() in status.c */
    AZ_S_OKAY,
-   AZ_S_OOM
+   AZ_S_MOOM
 };
 
 typedef unsigned char az_stat_t;
